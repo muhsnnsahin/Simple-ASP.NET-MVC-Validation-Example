@@ -1,0 +1,12 @@
+Validation Attribute(Doğrulama Niteliği),Description(Açıklama)
+Required,Alanın zorunlu olduğunu belirtir. Bu alanın mutlaka bir değer içermesi gerektiğini şart koşar.
+MinLength,Alan içerisindeki değere izin verilen minimum dizi uzunluğunu belirtir.
+MaxLength,Alan içerisindeki değere izin verilen maksimum dizi uzunluğunu belirtir.
+StringLength,Alan içerisindeki değere izin verilen minimum ve maksimum karakter dizi uzunluğunu belirtir.
+Range,Alan içerisindeki sayısal değere izin verilen minimum ve maksimum değeri belirtir.
+FileExtension,Alan içerisindeki değere(bu bir dosyanın verisel değeridir) izin verilen dosya uzantılarını(.jpg .png .gif vb.) belirtir.
+Phone, Alan içerisindeki değerin telefon numarası desenine(pattern) uyması gerektiğini belirtir. Telefon numaralarının desenleri ülkeden ülkeye değişebileceğinden dolayı ve birçok senaryoyu(sabit hat mobil telefon numarası gibi) içerebileceğinden dolayı. Bu niteliği kullanmak yerine kendi yazacağınız Regular Expression ile validate etmenizi tavsiye ederim.
+CreditCard,Alan içerisindeki değerin kredi kartı numarası desenine(pattern) uyması gerektiğini belirtir. Burada bilinmesi gereken nokta kredi kartı numarasının geçerliliği kontrol edilmez sadece değerin kredi kartı numarası desenine(pattern) uygunluğu kontrol edilmektedir. Bundan dolayı kredi kartı numarasının geçerliliğinin kontrol edilmesini tavsiye ederim.
+EmailAddress,Alan içerisindeki değerin e-posta adres desenine(pattern) uyması gerektiğini belirtir.
+RegularExpression,Alan içerisindeki değerin tanımlanacak desene(pattern) uyması gerektiğini belirtir.
+CustomValidation,Özel doğrulama yöntemlerinin ve metotlarının tanımlanmasıdır. Özel doğrulama tanımlamak için yaratılacak sınıfın ValidationAttribute'tan miras alması gerekir.
